@@ -1,0 +1,65 @@
+@article{lamport2001paxos,
+  title={Paxos made simple},
+  author={Lamport, Leslie and others},
+  journal={ACM Sigact News},
+  volume={32},
+  number={4},
+  pages={18--25},
+  year={2001}
+}
+
+@inproceedings{ongaro2014search,
+  title={In search of an understandable consensus algorithm},
+  author={Ongaro, Diego and Ousterhout, John},
+  booktitle={2014 USENIX Annual Technical Conference (USENIX ATC 14)},
+  pages={305--319},
+  year={2014}
+}
+
+@misc{linden2006marissa,
+  author = {Greg Linden},
+  title = {{Marissa Mayer at Web 2.0}},
+  year = 2006,
+  month = Nov
+  howpublished = {\url{http://glinden.blogspot.ca/2006/11/marissa-mayer-at-web-20.html}},
+  note = {Accessed: 2016-12-01}
+}
+
+@article{lamport1978time,
+  title={Time, clocks, and the ordering of events in a distributed system},
+  author={Lamport, Leslie},
+  journal={Communications of the ACM},
+  volume={21},
+  number={7},
+  pages={558--565},
+  year={1978},
+  publisher={ACM}
+}
+
+@article{ailijiang2016consensus,
+  title={Consensus in the Cloud: Paxos Systems Demystified},
+  author={Ailijiang, Ailidani and Charapko, Aleksey and Demirbas, Murat},
+  year={2016}
+}
+
+@InProceedings{VTime,
+  author =		{F. Mattern},
+  title =        {Virtual time and global states of distributed systems},
+  booktitle = {Parallel and Distributed Algorithms: Proc. of the
+                 	International Workshop on Parallel and Distributed
+                 	Algorithms},
+  publisher = {Elsevier Science Publishers B.V. (North-Holland)}	,
+  year =       	{1989},
+  pages =     {215--226},
+}
+
+@article{Snap,
+  author =      {K. M. Chandy and L. Lamport},
+  title =        {Distributed snapshots: Determining global states of distributed systems},
+  journal =      {TOCS},
+  month =        {feb},
+  year =         {1985},
+  volume =       {3},
+  number =       {1},
+  pages =        {63--75},
+}
