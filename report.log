@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  28 MAR 2017 15:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  28 MAR 2017 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -371,23 +371,22 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 tex.map}
 
 
-
 ] (./report.aux) ) 
 Here is how much of TeX's memory you used:
  4946 strings out of 493014
  70847 string characters out of 6133351
- 233268 words of memory out of 5000000
+ 237268 words of memory out of 5000000
  8384 multiletter control sequences out of 15000+600000
  40715 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,38p,466b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,10n,38p,960b,249s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.e
 nc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/
 local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/t
 exlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on report.pdf (1 page, 54453 bytes).
+Output written on report.pdf (1 page, 61312 bytes).
 PDF statistics:
  29 PDF objects out of 1000 (max. 8388607)
  20 compressed objects within 1 object stream
