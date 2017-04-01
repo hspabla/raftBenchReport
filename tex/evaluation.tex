@@ -2,38 +2,43 @@
 
 \subsection{Experiment Setup}
 
+\begin{figure}
+\centering
+\includegraphics[height=2in, width=3.2in]{images/SystemModel.png}
+\caption{Experimental setup on DigitalOcean.}
+\end{figure}
+
 
 \subsection{Results}
 
 \begin{figure}
 \centering
-\includegraphics[height=2in, width=3.2in]{images/OneClient.png}
+\includegraphics[height=2in, width=3.2in]{images/F_OneClient.png}
 \caption{Execution time (in ms) of 1000 READ and WRITE requests generated from each process running in a single client. These requests perform action on the same file.}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[height=2in, width=3.2in]{images/FiveClient_Read.png}
+\includegraphics[height=2in, width=3.2in]{images/F-HC-SF-R.png}
 \caption{Execution time (in ms) of increasing number of READ requests generated from each process running in 5 clients. These requests perform action on the same file.}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[height=2in, width=3.2in]{images/FiveClient_Write.png}
+\includegraphics[height=2in, width=3.2in]{images/F-HC-SF-W.png}
 \caption{Execution time (in ms) of increasing number of WRITE requests generated from each process running in 5 clients. These requests perform action on the same file.}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[height=2in, width=3.2in]{images/FiveClient_RW.png}
-\caption{Execution time (in ms) of equal and increasing number of READ and WRITE requests generated from each process running in 5 clients. These requests perform action on the same file.}
+\includegraphics[height=2in, width=3.2in]{images/F-VHC-SF.png}
+\caption{Execution time (in ms) of 1000 READ and WRITE requests generated from each process running in 4 clients. These requests perform action on the same file.}
 \end{figure}
 
-\begin{figure}
-\centering
-\includegraphics[height=2in, width=3.2in]{images/FiveClient_DiffFile.png}
-\caption{Execution time (in ms) of increasing number of READ and WRITE requests generated from each process running in 5 clients. These requests perform action on different files.}
-\end{figure}
+
+%Execution time (in ms) of equal and increasing number of READ and WRITE requests generated from each process running in 5 clients. These requests perform action on the same file.
+
+
 
 
 
