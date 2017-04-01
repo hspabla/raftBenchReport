@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  30 MAR 2017 22:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 APR 2017 12:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -352,83 +352,111 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+LaTeX Font Info:    Try loading font information for U+msa on input line 20.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+LaTeX Font Info:    Try loading font information for U+msb on input line 20.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 29.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 20.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-(./tex/abstract.tex) (./tex/introduction.tex) (./tex/methodology.tex)
-(./tex/evaluation.tex <images/SystemModel.png, id=1, 708.6475pt x 353.32pt>
+(./tex/abstract.tex) (./tex/introduction.tex
+Overfull \hbox (1.51588pt too wide) in paragraph at lines 11--12
+\T1/aer/m/n/10 loads: read-only, write-only, equal read-write work-
+ []
+
+) (./tex/raft.tex <images/SystemModel.png, id=1, 708.6475pt x 353.32pt>
 File: images/SystemModel.png Graphic file (type png)
 
 <use images/SystemModel.png>
-Package pdftex.def Info: images/SystemModel.png used on input line 7.
-(pdftex.def)             Requested size: 231.25926pt x 144.53867pt.
+Package pdftex.def Info: images/SystemModel.png used on input line 5.
+(pdftex.def)             Requested size: 361.35138pt x 166.22215pt.
 
-<images/F_OneClient.png, id=3, 349.305pt x 242.9075pt>
+Overfull \hbox (15.45677pt too wide) in paragraph at lines 9--10
+[]\T1/aer/m/n/10 Raft in-tro-duces the fol-low-ing sig-nif-i-cant fea-tures amo
+ngst
+ []
+
+[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+])
+(./tex/methodology.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (2.64651pt too wide) in paragraph at lines 3--4
+\T1/aer/m/n/10 about server con-fig-u-ra-tion>. We in-stalled Stan-ford open
+ []
+
+) (./tex/evaluation.tex
+<images/F_OneClient.png, id=13, 349.305pt x 242.9075pt>
 File: images/F_OneClient.png Graphic file (type png)
 
 <use images/F_OneClient.png>
-Package pdftex.def Info: images/F_OneClient.png used on input line 16.
+Package pdftex.def Info: images/F_OneClient.png used on input line 5.
 (pdftex.def)             Requested size: 231.26688pt x 144.53731pt.
 
-<images/F-HC-SF-R.png, id=4, 387.4475pt x 243.91125pt>
+<images/F-HC-SF-R.png, id=14, 387.4475pt x 243.91125pt>
 File: images/F-HC-SF-R.png Graphic file (type png)
 
 <use images/F-HC-SF-R.png>
-Package pdftex.def Info: images/F-HC-SF-R.png used on input line 22.
+Package pdftex.def Info: images/F-HC-SF-R.png used on input line 11.
 (pdftex.def)             Requested size: 231.26425pt x 144.53908pt.
 
-<images/F-HC-SF-W.png, id=5, 380.42125pt x 244.915pt>
+<images/F-HC-SF-W.png, id=15, 380.42125pt x 244.915pt>
 File: images/F-HC-SF-W.png Graphic file (type png)
 
 <use images/F-HC-SF-W.png>
-Package pdftex.def Info: images/F-HC-SF-W.png used on input line 28.
+Package pdftex.def Info: images/F-HC-SF-W.png used on input line 17.
 (pdftex.def)             Requested size: 231.26717pt x 144.54343pt.
 
-<images/F-VHC-SF.png, id=6, 394.47375pt x 243.91125pt>
+<images/F-VHC-SF.png, id=16, 394.47375pt x 243.91125pt>
 File: images/F-VHC-SF.png Graphic file (type png)
 
 <use images/F-VHC-SF.png>
-Package pdftex.def Info: images/F-VHC-SF.png used on input line 34.
+Package pdftex.def Info: images/F-VHC-SF.png used on input line 23.
 (pdftex.def)             Requested size: 231.26279pt x 144.53908pt.
+
+<images/F-VHC-DF.png, id=17, 382.42876pt x 231.86626pt>
+File: images/F-VHC-DF.png Graphic file (type png)
+
+<use images/F-VHC-DF.png>
+Package pdftex.def Info: images/F-VHC-DF.png used on input line 30.
+(pdftex.def)             Requested size: 231.26215pt x 144.54102pt.
 ) (./tex/conclusion.tex) (./tex/acknowledgements.tex)
-(./report.bbl) [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdf
-tex.map}
+(./report.bbl [2 <./images/SystemModel.png>] [3 <./images/F_OneClient.png> <./i
+mages/F-HC-SF-R.png> <./images/F-HC-SF-W.png> <./images/F-VHC-SF.png> <./images
+/F-VHC-DF.png>]) [4
 
-
-] [2 <./images/SystemModel.png> <./images/F_OneClient.png> <./images/F-HC-SF-R.
-png> <./images/F-HC-SF-W.png> <./images/F-VHC-SF.png>] (./report.aux) ) 
+] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 4961 strings out of 493089
- 71135 string characters out of 6134842
- 238512 words of memory out of 5000000
- 8329 multiletter control sequences out of 15000+600000
- 43859 words of font info for 55 fonts, out of 8000000 for 9000
+ 4975 strings out of 493089
+ 71367 string characters out of 6134842
+ 237520 words of memory out of 5000000
+ 8340 multiletter control sequences out of 15000+600000
+ 42705 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,38p,960b,311s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/lo
-cal/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
-w/times/utmr8a.pfb>
-Output written on report.pdf (2 pages, 228305 bytes).
+ 41i,8n,38p,1464b,315s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.e
+nc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pf
+b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on report.pdf (4 pages, 271461 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 59 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
