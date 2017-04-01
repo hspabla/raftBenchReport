@@ -2,33 +2,45 @@
 
 \begin{figure}
 \centering
-\includegraphics[height=2in, width=3.2in]{images/F_OneClient.png}
-\caption{Execution time (in ms) of 1000 READ and WRITE requests generated from each process running in a single client. These requests perform action on the same file.}
+\includegraphics[height=2in, width=3.2in]{images/F-HC-SF-R.png}
+\caption{Execution time (in ms) of increasing number of READ requests generated from each process running in 5 clients. These requests perform action on the same file.}~\label{fig:figure3}
 \end{figure}
 
-\begin{figure}
-\centering
-\includegraphics[height=2in, width=3.2in]{images/F-HC-SF-R.png}
-\caption{Execution time (in ms) of increasing number of READ requests generated from each process running in 5 clients. These requests perform action on the same file.}
-\end{figure}
+In this section, we present our results for the different experiments performed by varying contention and workload types.
+
+\subsection{Single client}
+
+In the first set of experiments, we wanted to measure the time taken for one single read and write request and benchmark it against the round trip time(RTT) for a simple ICMP message. The first request issued from any client process is directed to a random server chosen from the list of servers in the Raft cluster. Hence, it may either directly reach the leader or reach a follower and get re-directed to the leader. We observed that a single read request took 3-5ms if the request reached the leader directly, and  4-11ms on a miss, while a single write request took 2-4ms on hitting the leader and 3-10ms otherwise. Because there was a huge range in the results obtained for a single request, it was only natural to evaluate the total time taken for a thousand requests to obtain the average for a single request. Fig.\ref{fig:figure2} gives the average read and write time while running increasing number of processes in one client and 1000 requests in each of these processes. While a single read took more time than a single write, we observe that the average read time is consistently lesser than the write time. While, read calls a majority of other servers to ensure it is still the leader, a write call does extra work of appending the log entry on a majority of other servers. Hence, a write call taking more time than read is as expected considering the algorithm design. Also, with the increase in number of processes, the average read and write time increase almost linearly. The important point to note here is that the ICMP RTT is 0.587 and hence, the difference of 1.1ms for a read and 1.9ms for a write is the overhead Raft takes for its protocol execution. 
+
+\subsection{Multiple clients}
+
+In the second set of experiments, we measured the affect of issuing a large set of sequential requests on Raft. For this, we issued sequential requests ranging from 100-100000 using five clients. Six experiments were performed by changing the number of concurrent requests to 5, 25 and 50(1, 5 and 10 processes in each client), for a workload of 100\% read and 100\% write.
+
+Fig. \ref{fig:figure3} shows the result for running increasing number of sequential results on Raft using 5, 25 and 50 concurrent requests for a workload of 100\% reads, while Fig. \ref{fig:figure4} shows the same for 100\% write requests. Both the graphs show a very similar pattern, except that average write time at every point is greater than the average read time for the same number of requests and processes. The graphs also clearly show more the number of concurrent requests, higher is the average read and write time taken. However, increase in the number of sequential requests has no effect on the execution time for both reads and writes. Hence, Raft is robust under low concurrency and high request bombardment.
+This naturally brought us to the next set of experiments which dealt with increase in concurrent requests to Raft, while keeping the sequential requests consistent.
 
 \begin{figure}
 \centering
 \includegraphics[height=2in, width=3.2in]{images/F-HC-SF-W.png}
-\caption{Execution time (in ms) of increasing number of WRITE requests generated from each process running in 5 clients. These requests perform action on the same file.}
+\caption{Execution time (in ms) of increasing number of WRITE requests generated from each process running in 5 clients. These requests perform action on the same file.}~\label{fig:figure4}
 \end{figure}
+
+In the next phase, we used 4 clients and increased the number of processes running in each client so as to load Raft with higher number of concurrent requests. Fig.\ref{fig:figure5} displays the result for running 1000 requests in each process and increasing the number of processes from 1 to 100 in each client. In this and all previous experiments, all actions of read and write were done on the same file. However, we also wanted to judge the performance when the actions were performed on different files, to eliminate extra concurrency overhead associated with potential file locks.
+
 
 \begin{figure}
 \centering
 \includegraphics[height=2in, width=3.2in]{images/F-VHC-SF.png}
-\caption{Execution time (in ms) of 1000 READ and WRITE requests generated from each process running in 4 clients. These requests perform action on the same file.}
+\caption{Execution time (in ms) of 1000 READ and WRITE requests generated from each process running in 4 clients. These requests perform action on the same file.}~\label{fig:figure5}
 \end{figure}
+
+
 
 
 \begin{figure}
 \centering
 \includegraphics[height=2in, width=3.2in]{images/F-VHC-DF.png}
-\caption{Execution time (in ms) of 1000 READ and WRITE requests generated from each process running in 4 clients. These requests perform action on different files.}
+\caption{Execution time (in ms) of 1000 READ and WRITE requests generated from each process running in 4 clients. These requests perform action on different files.}~\label{fig:figure6}
 \end{figure}
 
 
