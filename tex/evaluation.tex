@@ -25,16 +25,17 @@ This naturally brought us to the next set of experiments which dealt with increa
 \caption{Execution time (in ms) of increasing number of WRITE requests generated from each process running in 5 clients. These requests perform action on the same file.}~\label{fig:figure4}
 \end{figure}
 
-In the next phase, we used 4 clients and increased the number of processes running in each client so as to load Raft with higher number of concurrent requests. Fig.\ref{fig:figure5} displays the result for running 1000 requests in each process and increasing the number of processes from 1 to 100 in each client. In this and all previous experiments, all actions of read and write were done on the same file. However, we also wanted to judge the performance when the actions were performed on different files, to eliminate extra concurrency overhead associated with potential file locks.
-
-
 \begin{figure}
 \centering
 \includegraphics[height=2in, width=3.2in]{images/F-VHC-SF.png}
 \caption{Execution time (in ms) of 1000 READ and WRITE requests generated from each process running in 4 clients. These requests perform action on the same file.}~\label{fig:figure5}
 \end{figure}
 
+In the next phase, we used 4 clients and increased the number of processes running in each client so as to load Raft with higher number of concurrent requests. Fig.\ref{fig:figure5} displays the result for running 1000 requests in each process and increasing the number of processes from 1 to 100 in each client. In this and all previous experiments, all actions of read and write were done on the same file. However, we also wanted to judge the performance when the actions were performed on different files, to eliminate extra concurrency overhead associated with potential file locks. Both graphs show worse than linear and better than exponential increase in the time. We did not go beyond 100 processes per client to avoid overloading the clients. In future, we would like to add more clients to increase concurrency even further and observe whether the time increase is more linear or exponential. However, it is certain that Raft gets overloaded with 400 concurrent requests, which was also noticed in more frequent leader election process. This election frequency was increased, as the latency for appendEntries requests increased, resulting in further overloading the Raft system. 
 
+The graphs also show the execution time for a workload of 50\% reads and 50\% writes. The average timings for the reads and writes are separately plotted on the graph. While we expected that this workload would lead to a line in between 100\% reads and 100\% writes, we however, assumed that the reads in 50-50 workload would take lesser time than writes, as observed before. However, it was seen that in such a workload, both reads and writes took very similar time, and hence the line for RW-read is hidden by RW-write in the graphs. This shows that in such a workload, writes block the reads and both end up taking similar but lesser time than a workload full of writes. 
+
+The third observation was in terms of action performed on same and different files, as shown in the two graphs respectively. While timings were almost similar in the two graphs until 75 processes, the writes took 20\% more time while performed on the same file for 100 processes. While operations on same file is expected to take longer than for different file, without extended results, we would not be able to make a conclusive comparison pattern for the same. 
 
 
 \begin{figure}

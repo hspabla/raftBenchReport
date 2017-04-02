@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 APR 2017 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  1 APR 2017 20:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -421,40 +421,48 @@ File: images/F-HC-SF-W.png Graphic file (type png)
 <use images/F-HC-SF-W.png>
 Package pdftex.def Info: images/F-HC-SF-W.png used on input line 24.
 (pdftex.def)             Requested size: 231.26717pt x 144.54343pt.
- [3 <./images/F-HC-SF-R.png> <./images/F-HC-SF-W.png>] <images/F-VHC-SF.png, id
-=28, 394.47375pt x 243.91125pt>
+
+<images/F-VHC-SF.png, id=23, 394.47375pt x 243.91125pt>
 File: images/F-VHC-SF.png Graphic file (type png)
 
 <use images/F-VHC-SF.png>
-Package pdftex.def Info: images/F-VHC-SF.png used on input line 33.
+Package pdftex.def Info: images/F-VHC-SF.png used on input line 30.
 (pdftex.def)             Requested size: 231.26279pt x 144.53908pt.
+ [3 <./images/F-HC-SF-R.png> <./images/F-HC-SF-W.png>]
+Underfull \vbox (badness 4391) has occurred while \output is active []
+
 
 <images/F-VHC-DF.png, id=29, 382.42876pt x 231.86626pt>
 File: images/F-VHC-DF.png Graphic file (type png)
 
 <use images/F-VHC-DF.png>
-Package pdftex.def Info: images/F-VHC-DF.png used on input line 42.
+Package pdftex.def Info: images/F-VHC-DF.png used on input line 43.
 (pdftex.def)             Requested size: 231.26215pt x 144.54102pt.
-) (./tex/conclusion.tex) (./tex/acknowledgements.tex)
-(./report.bbl) [4 <./images/F-VHC-SF.png> <./images/F-VHC-DF.png>]
-(./report.aux) ) 
+) (./tex/futurework.tex)
+Overfull \hbox (6.60692pt too wide) in paragraph at lines 3--33
+[]\T1/aer/m/n/10 While we eval-u-ated Raft un-der and with-out con-tention,
+ []
+
+(./tex/conclusion.tex) (./tex/acknowledgements.tex) (./report.bbl) [4 <./images
+/F-VHC-SF.png> <./images/F-VHC-DF.png>] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 4980 strings out of 493089
- 71432 string characters out of 6134842
- 237560 words of memory out of 5000000
+ 4983 strings out of 493089
+ 71480 string characters out of 6134842
+ 238560 words of memory out of 5000000
  8345 multiletter control sequences out of 15000+600000
  42705 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,8n,38p,1730b,315s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc
-}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on report.pdf (4 pages, 277932 bytes).
+{/usr/local/texlive/201
+5/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/u
+rw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/time
+s/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.p
+fb>
+Output written on report.pdf (4 pages, 280403 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream
