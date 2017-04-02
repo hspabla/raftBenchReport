@@ -1,5 +1,0 @@
-\begin{abstract}
-
-We present a exhaustive performance measurements of original Raft open source implementation (cite lograft) under range of workloads and failure scenarios. We tried to justify the performance observed to the design decision made by Raft protocol. In this paper, we describe the set of experiments, methodology and results which we observed.  
-
-\end{abstract}

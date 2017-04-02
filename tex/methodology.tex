@@ -7,7 +7,7 @@
 \end{figure}
 
 
-Eight servers were rented from the cloud service platform, DigitalOcean, to perform experiments. <Write about server configuration>. We installed Stanford open source implementation of raft, LogCabin, in three of the servers and configured them to run as a Raft cluster. The remaining five servers were used as clients to issue read and write requests to Raft. Fig.\ref{fig:figure1} gives the resultant setup of the model.
+Eight servers were rented from the cloud service platform, DigitalOcean, to perform experiments. Each server running on single CPU - Ubuntu 16.04.2 x64, with all machines in single data centre. We installed Stanford open source implementation of raft, LogCabin, in three of the servers and configured them to run as a Raft cluster. The remaining five servers were used as clients to issue read and write requests to Raft. Fig.\ref{fig:figure1} gives the resultant setup of the model.
 
 The state machine behind the cluster is a file system stored on disk. Each file in the file system stores one single value. These file structures are stored and accessed using tree operations, where the file name is accessed by traversing through the directory structure in the tree. This becomes similar to a key-value store, where the filename and structure is the key which stores a single value. Read requests read the value stored in the file, while write writes or overwrites the value in the file. 
 
